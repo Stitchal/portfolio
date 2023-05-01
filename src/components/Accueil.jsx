@@ -68,7 +68,7 @@ const Accueil = () => {
             />
           </motion.div>
         </div>
-        <motion.div className="item mt-16 absolute bottom-10" variants={item}>
+        <motion.div className="item mt-16 absolute bottom-2" variants={item}>
           <Bounce>
             <Link
               to="Projets"

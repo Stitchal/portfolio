@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { AiFillGithub } from "react-icons/ai";
+import CV from "../assets/CV.pdf";
+import { FiExternalLink } from "react-icons/fi";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -50,6 +52,22 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li
+            key={5}
+            className="p-2 cursor-pointer font-medium text-gray-400 hover:text-blue-500 duration-200 rounded-lg"
+          >
+            <a
+              href={CV}
+              target="_blank"
+              rel="noreferrer"
+              className="flex flex-row items-center gap-1 justify-center"
+            >
+              CV
+              <div className="pb-1">
+                <FiExternalLink size={20} />
+              </div>
+            </a>
+          </li>
         </ul>
 
         <div
@@ -76,6 +94,23 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <li
+              key={5}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            >
+              <a
+                href={CV}
+                onClick={() => setNav(!nav)}
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-row items-center gap-2"
+              >
+                CV
+                <div className="pb-1">
+                  <FiExternalLink size={40} />
+                </div>
+              </a>
+            </li>
           </ul>
         )}
       </div>
