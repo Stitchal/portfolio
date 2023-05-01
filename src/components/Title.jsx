@@ -2,7 +2,7 @@ import React from "react";
 
 const Title = (props) => {
   return (
-    <div className={"flex flex-col gap-2 my-" + props.margin + " w-full"}>
+    <div className={"flex flex-col gap-2 w-full"}>
       <h1
         className={
           "flex text-" + props.level + "xl font-bold text-custom-white"

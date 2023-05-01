@@ -12,7 +12,7 @@ const Contact = () => {
         <form
           action="https://getform.io/f/05b051d0-22e7-4f67-a0c5-8f4028610ada"
           method="POST"
-          className="flex flex-col w-full gap-5"
+          className="flex flex-col w-full gap-5 mt-4"
         >
           <input
             type="text"

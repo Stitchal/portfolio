@@ -48,7 +48,7 @@ const Projets = () => {
     >
       <div className="flex flex-col w-full lg:w-2/3 items-center">
         <Title title="Projets" level="4" margin="8" />
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-0 mt-4">
           {links.map(({ title, date, description, src, link }) => (
             <ProjectCard
               title={title}
