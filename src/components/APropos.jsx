@@ -2,6 +2,7 @@ import React from "react";
 import Title from "./Title";
 import Competences from "./Competences";
 import Etudes from "./Etudes";
+import ExperiencesProfessionnelles from "./ExperiencesProfessionnelles";
 
 const APropos = () => {
   return (
@@ -14,6 +15,7 @@ const APropos = () => {
         <div className="flex flex-col gap-12 w-full mt-4">
           <Competences />
           <Etudes />
+          <ExperiencesProfessionnelles />
         </div>
       </div>
     </div>

@@ -56,8 +56,8 @@ const Accueil = () => {
               className="flex text-custom-white text-2xl lg:text-4xl item"
               variants={item}
             >
-              Étudiant en deuxième année de BUT Informatique passionné par le
-              développement web et la musique.
+              Étudiant en deuxième année de BUT Informatique passionné par
+              l'informatique et la musique.
             </motion.p>
           </div>
           <motion.div class="item" variants={item}>
