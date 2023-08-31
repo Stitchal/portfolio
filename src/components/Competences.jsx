@@ -23,6 +23,7 @@ import vscodeImage from "../assets/competences/vscode.png";
 import jetbrainsImage from "../assets/competences/jetbrains.png";
 import pythonImage from "../assets/competences/python.png";
 import mysqlImage from "../assets/competences/mySQL.png";
+import cicd from "../assets/competences/cicd.png";
 
 import Skill from "./Skill";
 import Container from "./Container";
@@ -130,7 +131,7 @@ const Competences = () => {
     },
   ];
 
-  const competencesOutils = [
+  const competencesDevOps = [
     {
       id: 16,
       src: gitImage,
@@ -151,21 +152,30 @@ const Competences = () => {
     },
     {
       id: 19,
+      src: cicd,
+      title: "CI/CD",
+      link: "https://docs.gitlab.com/ee/ci/",
+    },
+    {
+      id: 20,
+      src: dockerImage,
+      title: "Docker",
+      link: "https://www.docker.com/",
+    },
+  ];
+
+  const competencesIDE = [
+    {
+      id: 21,
       src: vscodeImage,
       title: "Visual Studio Code",
       link: "https://code.visualstudio.com/",
     },
     {
-      id: 20,
+      id: 22,
       src: jetbrainsImage,
       title: "Jetbrain IDEs",
       link: "https://www.jetbrains.com/fr-fr/products/",
-    },
-    {
-      id: 21,
-      src: dockerImage,
-      title: "Docker",
-      link: "https://www.docker.com/",
     },
   ];
 
@@ -206,6 +216,17 @@ const Competences = () => {
         </div>
 
         <div className="flex flex-wrap gap-1 items-center">
+          <Title title="DevOps" level="2" />
+          <div className="flex flex-wrap gap-4 items-center">
+            {competencesDevOps.map(({ id, src, title, link }) => (
+              <div key={id} className="flex flex-col items-center">
+                <Skill src={src} title={title} link={link} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-1 items-center">
           <Title title="Systèmes d'exploitation" level="2" />
           <div className="flex flex-wrap gap-4 items-center">
             {competencesOs.map(({ id, src, title, link }) => (
@@ -217,9 +238,9 @@ const Competences = () => {
         </div>
 
         <div className="flex flex-wrap gap-1 items-center">
-          <Title title="Outils" level="2" />
+          <Title title="IDE" level="2" />
           <div className="flex flex-wrap gap-4 items-center">
-            {competencesOutils.map(({ id, src, title, link }) => (
+            {competencesIDE.map(({ id, src, title, link }) => (
               <div key={id} className="flex flex-col items-center">
                 <Skill src={src} title={title} link={link} />
               </div>

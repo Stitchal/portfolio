@@ -35,36 +35,48 @@ const Accueil = () => {
   return (
     <div
       name="Accueil"
-      className="flex justify-center items-center h-screen w-full bg-gradient-to-r from-gray-900 to-blue-950 px-5 flex-col"
+      className="flex sm:justify-center items-center h-screen w-full bg-gradient-to-r px-5 flex-col from-background-color to-container-bg"
     >
       <motion.div
-        className="flex flex-col lg:w-2/3 items-center"
+        className="flex flex-col 2xl:w-2/3 items-center"
         variants={container}
         initial="hidden"
         animate="visible"
       >
-        <div className="flex md:flex-row flex-col lg:items-center gap-10">
-          <div>
+        <div className="flex justify-center md:flex-row flex-wrap-reverse md:flex-nowrap lg:items-center gap-10 mt-20 lg:mt-0">
+          <div className="flex flex-col gap-2">
             <motion.h1
-              className="text-custom-white lg:text-6xl text-4xl font-bold item"
+              className="text-custom-white lg:text-6xl text-3xl font-bold pb-2"
               variants={item}
             >
               Bonjour ! Je suis{" "}
               <span className="text-blue-500">Alexis Rosset</span>,
             </motion.h1>
             <motion.p
-              className="flex text-custom-white text-2xl lg:text-4xl item"
+              className="flex text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              Étudiant en deuxième année de BUT Informatique passionné par
-              l'informatique et la musique.
+              Étudiant en Licence 3 MIAGE passionné par l'informatique et la
+              musique.
+            </motion.p>
+            <motion.p
+              className="flex text-custom-white text-xl lg:text-3xl "
+              variants={item}
+            >
+              <i>
+                Je recherche actuellement une{" "}
+                <span className="text-blue-500">alternance</span> pour une durée{" "}
+                <span className="text-blue-500">d'un an</span> ou de{" "}
+                <span className="text-blue-500">trois ans</span>. Je suis ouvert
+                à toutes les opportunités.
+              </i>
             </motion.p>
           </div>
-          <motion.div class="item" variants={item}>
+          <motion.div className="item" variants={item}>
             <img
               src={profileImage}
               alt="Alexis Rosset img"
-              className=" mx-auto max-w-2xl hover:scale-110 duration-500 border-4 border-blue-500 rounded-full"
+              className=" mx-auto max-w-2xl hover:scale-110 duration-500 rounded-full border-blue-800 border-4"
             />
           </motion.div>
         </div>

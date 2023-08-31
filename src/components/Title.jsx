@@ -11,7 +11,7 @@ const Title = (props) => {
         {props.title}
       </h1>
       {props.level === "4" && (
-        <div className="bg-blue-500 w-12 h-3 rounded-sm"></div>
+        <div className="bg-blue-500 w-12 h-3 rounded-sm text-4xl"></div>
       )}
     </div>
   );
