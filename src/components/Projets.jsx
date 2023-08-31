@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProjectCard from "./ProjectCard";
 import annuaire from "../assets/projects-img/annuaire.png";
 import magasinVirtuel from "../assets/projects-img/magasinVirtuel.png";
@@ -10,8 +10,6 @@ import allovoisin from "../assets/projects-img/allovoisin.png";
 import Title from "./Title";
 
 const Projets = () => {
-  const [key, setKey] = useState(0);
-
   const links = [
     {
       id: 1,
