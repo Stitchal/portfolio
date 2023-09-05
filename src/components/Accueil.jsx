@@ -66,9 +66,7 @@ const Accueil = () => {
               <i>
                 Je recherche actuellement une{" "}
                 <span className="text-blue-500">alternance</span> pour une durée{" "}
-                <span className="text-blue-500">d'un an</span> ou de{" "}
-                <span className="text-blue-500">trois ans</span>. Je suis ouvert
-                à toutes les opportunités.
+                <span className="text-blue-500">d'un an</span> dans le développement <span className="text-blue-500">Back-end</span> et/ou <span className="text-blue-500">Front-end</span>.
               </i>
             </motion.p>
           </div>
