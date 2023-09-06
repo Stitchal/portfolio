@@ -16,6 +16,7 @@ const Projets = () => {
       title:
         "Refonte de l'application web de la communauté de recherche scientifique mondiale de la réécriture",
       date: "Avril-Juin 2023",
+      link: "https://rewriting.inria.fr/",
       description:
         "Refonte complète de l'application web de la communauté de recherche scientifique mondiale basée sur la réécriture. L'objectif est de créer une application facilement maintenable, pérenne et responsive, avec une interface graphique pour gérer la base de données et afficher les données actualisées. Création d'une API et dépoiement dans des conteneurs Docker à travers la CI/CD de Gitlab.",
       src: rewriting,
@@ -23,9 +24,9 @@ const Projets = () => {
     {
       id: 2,
       title: "Portfolio personnel",
-      date: "2023",
+      date: "2023",link: "https://rewriting.inria.fr/",
       description:
-        "Création de mon portfolio en React.js. L'application web et responsive. L'objectif est de présenter mes projets et mes compétences. Le site est stylisé avec Tailwind.css et hébergé sur GitHub Pages.",
+        "Création de mon portfolio en React.js. Le site web et responsive. L'objectif est de présenter mes projets et mes compétences. Stylisé avec Tailwind.css et hébergé sur GitHub Pages.",
       src: portfolio,
     },
     {
