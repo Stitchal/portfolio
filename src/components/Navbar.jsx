@@ -25,7 +25,7 @@ const Navbar = () => {
             </Link>
           </h1>
           <a
-            href="https://www.linkedin.com/in/alexis-rosset-b38869235"
+            href="https://www.linkedin.com/in/alexisrosset/"
             className="text-custom-white hover:text-blue-500 duration-200 cursor-pointer hover:scale-110"
             target="_blank"
             rel="noreferrer"

@@ -1,7 +1,7 @@
 import React from "react";
-import Title from "./Title";
+import Title from "../components/Title";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div
       name="Contact"
@@ -43,4 +43,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

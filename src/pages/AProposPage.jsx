@@ -1,11 +1,11 @@
 import React from "react";
-import Title from "./Title";
-import Competences from "./Competences";
-import Etudes from "./Etudes";
-import ExperiencesProfessionnelles from "./ExperiencesProfessionnelles";
-import AutresCompetences from "./AutresCompetences";
+import Title from "../components/Title";
+import Competences from "../components/Competences";
+import Etudes from "../components/Etudes";
+import ExperiencesProfessionnelles from "../components/ExperiencesProfessionnelles";
+import AutresCompetences from "../components/AutresCompetences";
 
-const APropos = () => {
+const AProposPage = () => {
   return (
     <div
       name="À propos"
@@ -24,4 +24,4 @@ const APropos = () => {
   );
 };
 
-export default APropos;
+export default AProposPage;

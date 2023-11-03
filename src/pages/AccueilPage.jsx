@@ -7,7 +7,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import styled, { keyframes } from "styled-components";
 import { bounce } from "react-animations";
 
-const Accueil = () => {
+const AccueilPage = () => {
   const Bounce = styled.div`
     animation: 7s ${keyframes`${bounce}`} infinite;
   `;
@@ -53,23 +53,19 @@ const Accueil = () => {
               <span className="text-blue-500">Alexis Rosset</span>,
             </motion.h1>
             <motion.p
-              className="flex text-custom-white text-xl lg:text-3xl item"
+              className="text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              Étudiant en Licence 3 MIAGE passionné par l'informatique et la
-              musique.
+              <span className="text-blue-400"> Étudiant </span> en Licence 3
+              <span className="text-blue-400"> MIAGE </span>
+              passionné par l'informatique et la musique.
             </motion.p>
             <motion.p
-              className="flex text-custom-white text-xl lg:text-3xl "
+              className=" text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              <i>
-                Je recherche actuellement une{" "}
-                <span className="text-blue-500">alternance</span> pour une durée{" "}
-                <span className="text-blue-500">d'un an</span> ou de{" "}
-                <span className="text-blue-500">trois ans</span>. Je suis ouvert
-                à toutes les opportunités.
-              </i>
+              Alternant <span className="text-blue-400">DevOps</span> chez{" "}
+              <span className="text-blue-400">LuxCarta Technology</span>.
             </motion.p>
           </div>
           <motion.div className="item" variants={item}>
@@ -97,4 +93,4 @@ const Accueil = () => {
   );
 };
 
-export default Accueil;
+export default AccueilPage;

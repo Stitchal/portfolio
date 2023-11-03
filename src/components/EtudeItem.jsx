@@ -1,5 +1,7 @@
 import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { FiExternalLink } from "react-icons/fi";
+import { Tooltip } from "@mui/material";
 
 const EtudeItem = (props) => {
   return (
@@ -22,7 +24,17 @@ const EtudeItem = (props) => {
         <p className="font-bold">{props.name}</p>
         <div className="flex gap-1 items-center ">
           <LocationOnIcon fontSize="small" />
-          <p>{props.title}</p>
+          <Tooltip title="Ouvrir dans Google Maps" placement="top">
+            <a
+              href={props.location}
+              target="_blank"
+              className=" inline hover:underline"
+              rel="noreferrer"
+            >
+              {props.title}
+              <FiExternalLink size={15} className="ml-1 inline" />
+            </a>
+          </Tooltip>
         </div>
       </div>
     </div>
