@@ -11,6 +11,9 @@ module.exports = {
         "container-bg": "#172D4E",
         "blue-gray": "#1E3B66",
       },
+      screens: {
+        "3xl": "1920px", // Vous pouvez ajuster la valeur en fonction de vos besoins
+      },
     },
   },
   plugins: [],

@@ -4,24 +4,23 @@ import inriaImage from "../assets/inria.png";
 import luxCartaImage from "../assets/luxcarta.jpg";
 import { FiExternalLink } from "react-icons/fi";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import MapIcon from "@mui/icons-material/Map";
 import { Tooltip } from "@mui/material";
 
 const ExperiencesProfessionnelles = () => {
   return (
     <Container title="Expériences professionnelles" titleLevel="3">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         <div className="w-full flex gap-4 flex-col lg:flex-row ">
           <Tooltip title="https://www.luxcarta.com" placement="top">
             <a
               href="https://www.luxcarta.com/"
-              className="flex h-32 lg:w-32 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
+              className="flex h-24 w-full lg:w-24 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
               target="_blank"
               rel="noreferrer"
               style={{ backgroundColor: "#1E3B66" }}
             >
               <img
-                className="object-contain h-28 lg:w-32" // Ajouté des classes pour le responsive
+                className="h-full md:h-20 lg:w-20 rounded-lg" // Ajouté des classes pour le responsive
                 src={luxCartaImage}
                 alt="LuxCarta"
               />
@@ -30,8 +29,12 @@ const ExperiencesProfessionnelles = () => {
 
           <div className="w-full flex flex-col gap-2 items-column">
             <div className="flex flex-col">
-              <p className="font-bold text-sm text-gray-400">Novembre 2023</p>
-              <p className="font-bold text-xl">Alternance DevOps</p>
+              <p className="font-bold text-sm text-blue-400">
+                Novembre 2023 - aujourd'hui
+              </p>
+              <p className="font-bold text-xl">
+                Alternant DevOps / Quality Assurance
+              </p>
             </div>
             <div className="flex gap-1 items-center ">
               <Tooltip title="Ouvrir dans Google Maps" placement="top">
@@ -48,7 +51,18 @@ const ExperiencesProfessionnelles = () => {
               </Tooltip>
             </div>
             <div className="flex flex-col gap-0.5 items-column">
-              <p>--</p>
+              <p>
+                Amélioration des chaînes d'intégration continue et de
+                déploiement continu.
+              </p>
+              <ul>
+                <li>Mise en place de nouvelles chaînes de tests.</li>
+                <li>Mise en place de rapports de tests.</li>
+                <li>
+                  Écriture de tests d'intégration et de tests unitaires en
+                  Python et C++
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -59,12 +73,16 @@ const ExperiencesProfessionnelles = () => {
           >
             <a
               href="https://www.inria.fr/fr/centre-inria-universite-cote-azur"
-              className="flex w-full h-32 lg:w-32 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
+              className="flex h-24 w-full lg:w-24 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
               target="_blank"
               rel="noreferrer"
               style={{ backgroundColor: "#1E3B66" }}
             >
-              <img className="object-contain" src={inriaImage} alt="Inria" />
+              <img
+                className="w-24 lg:h-20 lg:w-20 rounded-lg"
+                src={inriaImage}
+                alt="Inria"
+              />
             </a>
           </Tooltip>
           <div className="w-full flex flex-col gap-2 items-column">

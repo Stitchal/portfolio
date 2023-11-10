@@ -15,6 +15,8 @@ import nodejsImage from "../assets/competences/nodejs.png";
 import phpImage from "../assets/competences/php.png";
 import reactImage from "../assets/competences/react.png";
 import tailwindImage from "../assets/competences/tailwind.png";
+import sassImage from "../assets/competences/sass.png";
+import materialUI from "../assets/competences/mui.png";
 
 import windowsImage from "../assets/competences/windows.png";
 import ubuntuImage from "../assets/competences/ubuntu.png";
@@ -31,16 +33,10 @@ import Container from "./Container";
 const Competences = () => {
   const competencesFrontEnd = [
     {
-      id: 1,
-      src: htmlImage,
-      title: "HTML",
-      link: "https://developer.mozilla.org/fr/docs/Web/HTML",
-    },
-    {
-      id: 2,
-      src: cssImage,
-      title: "CSS",
-      link: "https://developer.mozilla.org/fr/docs/Web/CSS",
+      id: 4,
+      src: reactImage,
+      title: "React",
+      link: "https://react.dev/",
     },
     {
       id: 3,
@@ -49,10 +45,10 @@ const Competences = () => {
       link: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
     },
     {
-      id: 4,
-      src: reactImage,
-      title: "React",
-      link: "https://react.dev/",
+      id: 1,
+      src: htmlImage,
+      title: "HTML",
+      link: "https://developer.mozilla.org/fr/docs/Web/HTML",
     },
     {
       id: 5,
@@ -60,6 +56,14 @@ const Competences = () => {
       title: "Tailwind",
       link: "https://tailwindcss.com/",
     },
+    { id: 24, src: materialUI, title: "Material UI", link: "https://mui.com/" },
+    {
+      id: 2,
+      src: cssImage,
+      title: "CSS",
+      link: "https://developer.mozilla.org/fr/docs/Web/CSS",
+    },
+    { id: 23, src: sassImage, title: "SASS", link: "https://sass-lang.com/" },
   ];
 
   const competencesBackEnd = [

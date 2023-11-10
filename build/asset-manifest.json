@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7c4da2f.css",
-    "main.js": "/static/js/main.14dbbf6a.js",
-    "static/media/CV.pdf": "/static/media/CV.b02317a09afc08e0acb0.pdf",
+    "main.css": "/static/css/main.8d55e247.css",
+    "main.js": "/static/js/main.c65cb225.js",
+    "static/media/CV.pdf": "/static/media/CV.b1602388205783bf6c15.pdf",
     "static/media/allovoisin.png": "/static/media/allovoisin.e99a4de7165eff65cc7c.png",
-    "static/media/portfolio.png": "/static/media/portfolio.7bb6b408be5833e61ce8.png",
+    "static/media/portfolio.png": "/static/media/portfolio.9071cc3e09b7410e17b0.png",
     "static/media/magasinVirtuel.png": "/static/media/magasinVirtuel.f89b99fa8dfd5b5b153e.png",
     "static/media/annuaire.png": "/static/media/annuaire.19751165db78b3a35739.png",
     "static/media/appliMobile.png": "/static/media/appliMobile.e3ec5ceb49c10b3cd844.png",
@@ -13,6 +13,7 @@
     "static/media/python.png": "/static/media/python.1eaaad356f1e20a2540f.png",
     "static/media/killBique.jpg": "/static/media/killBique.d5f28f971ff7d422d512.jpg",
     "static/media/ubuntu.png": "/static/media/ubuntu.c3ae421f49700d77875c.png",
+    "static/media/androidstudio.png": "/static/media/androidstudio.7bc9d933b2ef63ba0690.png",
     "static/media/profile.png": "/static/media/profile.88754a28ded363b1b263.png",
     "static/media/vscode.png": "/static/media/vscode.b7439a02ed85dd0ad9ee.png",
     "static/media/iut.png": "/static/media/iut.dd7338728189b8a3ce3f.png",
@@ -21,21 +22,23 @@
     "static/media/mySQL.png": "/static/media/mySQL.0631b0382f88d33fc8bc.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/c.png": "/static/media/c.bf0af88d24cd724c83bc.png",
-    "static/media/universiteCoteDazur.png": "/static/media/universiteCoteDazur.213d98f062667e26920e.png",
     "static/media/nodejs.png": "/static/media/nodejs.952a9ea986dcfa5229ad.png",
+    "static/media/dockercompose.png": "/static/media/dockercompose.60dacc672765914099cf.png",
     "static/media/java.png": "/static/media/java.ddf8676bd569fe01ab44.png",
     "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
     "static/media/cicd.png": "/static/media/cicd.81c5e16699f15c0ab922.png",
     "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/universiteCoteDazur.png": "/static/media/universiteCoteDazur.3f529fea06980d5d2757.png",
     "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/sass.png": "/static/media/sass.5e9edffeb2e392a63e04.png",
     "index.html": "/index.html",
-    "main.d7c4da2f.css.map": "/static/css/main.d7c4da2f.css.map",
-    "main.14dbbf6a.js.map": "/static/js/main.14dbbf6a.js.map"
+    "main.8d55e247.css.map": "/static/css/main.8d55e247.css.map",
+    "main.c65cb225.js.map": "/static/js/main.c65cb225.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7c4da2f.css",
-    "static/js/main.14dbbf6a.js"
+    "static/css/main.8d55e247.css",
+    "static/js/main.c65cb225.js"
   ]
 }

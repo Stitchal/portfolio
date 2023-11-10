@@ -1,9 +1,7 @@
 import { Avatar, Chip, IconButton, Tooltip } from "@mui/material";
 import React from "react";
+import CloseIcon from "@mui/icons-material/Close";
 import { FiExternalLink } from "react-icons/fi";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { OpenInFullRounded } from "@mui/icons-material";
 
@@ -19,12 +17,21 @@ const ProjectCard = (props) => {
           <img
             src={props.src}
             alt={props.src + " card"}
-            className="rounded-lg cursor-pointer duration-200 object-contain"
+            className="rounded-lg cursor-pointer duration-200 object-contain w-full"
             onClick={handleOpen}
-          />
+          />{" "}
           <Tooltip title="Afficher l'image en grand" placement="top">
             <IconButton
-              style={{ position: "absolute", right: 0, top: 0 }}
+              sx={{
+                position: "absolute",
+                right: 0,
+                top: 0,
+                padding: "4px",
+                transition: "transform .2s",
+                "&:hover": {
+                  transform: "scale(1.2)",
+                },
+              }}
               onClick={handleOpen}
             >
               <OpenInFullRounded
@@ -32,12 +39,8 @@ const ProjectCard = (props) => {
                   fontSize: "2rem",
                   background: "rgba(31, 42, 58, 0.5)",
                   color: "#FFFFFF",
-                  borderRadius: "50%",
                   padding: "4px",
-                  transition: "transform .2s",
-                  "&:hover": {
-                    transform: "scale(1.2)",
-                  },
+                  borderRadius: "50%",
                 }}
               />
             </IconButton>
@@ -87,11 +90,41 @@ const ProjectCard = (props) => {
         aria-describedby="modal-modal-description"
         className="flex justify-center items-center"
       >
-        <img
-          src={props.src}
-          alt={props.src + " card"}
-          className="rounded-lg lg:w-3/4 object-contain mx-auto"
-        />
+        <div className="lg:w-3/4 mx-auto object-contain relative">
+          <img
+            src={props.src}
+            alt={props.src + " card"}
+            className="w-full lg:rounded-lg object-contain mx-auto"
+          />
+          <Tooltip title="Fermer" placement="top">
+            <IconButton
+              sx={{
+                position: "absolute", // Décommentez cette ligne
+                top: 0, // Décommentez cette ligne
+                right: 0, // Décommentez cette ligne
+                display: "flex",
+                justifyContent: "left",
+                alignItems: "flex-end",
+                padding: "4px",
+                transition: "transform .2s",
+                "&:hover": {
+                  transform: "scale(1.2)",
+                },
+              }}
+              onClick={handleClose}
+            >
+              <CloseIcon
+                sx={{
+                  fontSize: "2rem",
+                  background: "rgba(31, 42, 58, 0.5)",
+                  color: "#FFFFFF",
+                  padding: "4px",
+                  borderRadius: "50%",
+                }}
+              />
+            </IconButton>
+          </Tooltip>
+        </div>
       </Modal>
     </>
   );

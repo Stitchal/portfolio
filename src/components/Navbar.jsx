@@ -5,6 +5,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { AiFillGithub } from "react-icons/ai";
 import CV from "../assets/CV.pdf";
 import { FiExternalLink } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = () => {
             </Link>
           </h1>
           <a
-            href="https://www.linkedin.com/in/alexisrosset/"
+            href="https://www.linkedin.com/in/alexis-rosset-b38869235"
             className="text-custom-white hover:text-blue-500 duration-200 cursor-pointer hover:scale-110"
             target="_blank"
             rel="noreferrer"
@@ -74,7 +75,15 @@ const Navbar = () => {
           onClick={() => setNav(!nav)}
           className="cursor-pointer pr-4 z-10 text-blue-500 md:hidden"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {nav ? (
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }}>
+              <FaTimes size={30} />
+            </motion.button>
+          ) : (
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }}>
+              <FaBars size={30} />
+            </motion.button>
+          )}
         </div>
 
         {nav && (

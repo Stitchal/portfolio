@@ -8,7 +8,7 @@ const EtudeItem = (props) => {
     <div className="w-full flex gap-4 ">
       <a
         href={props.link}
-        className="flex w-32 h-32 object-cover rounded-xl shadow-md p-2 hover:scale-105 duration-200"
+        className="flex w-24 h-24 rounded-xl shadow-md p-2 hover:scale-105 duration-200"
         style={{ backgroundColor: "#1E3B66" }}
         target="_blank"
         rel="noreferrer"
@@ -20,8 +20,12 @@ const EtudeItem = (props) => {
         />
       </a>
       <div className="w-64 sm:w-full">
-        <p className="font-bold text-sm text-gray-400">{props.year}</p>
-        <p className="font-bold">{props.name}</p>
+        {props.actual ? (
+          <p className="font-bold text-sm text-blue-400">{props.year}</p>
+        ) : (
+          <p className="font-bold text-sm">{props.year}</p>
+        )}
+        <p className="font-bold text-lg">{props.name}</p>
         <div className="flex gap-1 items-center ">
           <LocationOnIcon fontSize="small" />
           <Tooltip title="Ouvrir dans Google Maps" placement="top">

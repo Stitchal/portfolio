@@ -17,7 +17,9 @@
 
   /* Styles pour la barre de défilement */
   ::-webkit-scrollbar {
-    width: 0.7vw;
+    min-width: 0.7vw;
+    width: 12.5px;
+    max-width: 0.7vw;
     /* Largeur de la barre de défilement */
   }
 
@@ -42,7 +44,7 @@
   /* Style de la piste (track) de la barre de défilement */
   ::-webkit-scrollbar-track {
     margin: 4px;
-    border-radius: 10px;
+    border-radius: 1000px;
     background-color: #1E3B66;
     /* Couleur de la piste */
     box-shadow: inset 0 0 5px #1E3B66;

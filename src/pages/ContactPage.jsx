@@ -1,9 +1,8 @@
 import React, { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import Title from "./Title";
+import Title from "../components/Title";
 
 const Contact = () => {
-  const [showCaptcha, setShowCaptcha] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
   const formRef = useRef(null);
 
@@ -14,14 +13,9 @@ const Contact = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (!captchaValue) {
-      setShowCaptcha(true);
-      // console.log("Veuillez valider le captcha")
-    } else {
-      // Envoyer le formulaire
-      formRef.current.submit();
-      // console.log("Formulaire envoyé");
-    }
+    // Envoyer le formulaire
+    captchaValue && formRef.current.submit();
+    // console.log("Formulaire envoyé");
   }
 
   return (
@@ -58,15 +52,13 @@ const Contact = () => {
             rows="10"
             className="p-4 bg-gradient-to-tr from-container-bg to-blue-gray text-custom-white rounded-lg focus:outline-none resize-none shadow-md shadow-gray-900"
             required
-          ></textarea><div className="flex flex-col items-end gap-4 w-full justify-end">
-          {showCaptcha && (
+          ></textarea>
+          <div className="flex flex-col items-end gap-4 w-full justify-end">
             <ReCAPTCHA
               sitekey="6Lf9ggQoAAAAAIGpzYtTnhp-oDoOCtBPXwfT1kr8"
               onChange={onChange}
             />
-          )}
 
-          
             <button className="flex text-custom-white bg-blue-500 cursor-pointer w-fit md:py-4 p-4 md:px-10 lg:mt-0 duration-500 rounded-xl hover:scale-110 font-bold">
               Envoyer
             </button>

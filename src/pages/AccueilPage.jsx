@@ -64,7 +64,7 @@ const AccueilPage = () => {
               className=" text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              Alternant <span className="text-blue-400">DevOps</span> chez{" "}
+              <span className="text-blue-400">Alternant DevOps / QA</span> chez{" "}
               <span className="text-blue-400">LuxCarta Technology</span>.
             </motion.p>
           </div>
