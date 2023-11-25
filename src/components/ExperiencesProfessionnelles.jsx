@@ -56,10 +56,10 @@ const ExperiencesProfessionnelles = () => {
                 déploiement continu.
               </p>
               <ul>
-                <li>Mise en place de nouvelles chaînes de tests.</li>
-                <li>Mise en place de rapports de tests.</li>
+                <li>- Mise en place de nouvelles chaînes de tests.</li>
+                <li>- Mise en place de rapports de tests.</li>
                 <li>
-                  Écriture de tests d'intégration et de tests unitaires en
+                  - Écriture de tests d'intégration et de tests unitaires en
                   Python et C++
                 </li>
               </ul>

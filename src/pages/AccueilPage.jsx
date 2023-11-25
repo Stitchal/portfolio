@@ -72,7 +72,7 @@ const AccueilPage = () => {
             <img
               src={profileImage}
               alt="Alexis Rosset img"
-              className=" mx-auto max-w-2xl hover:scale-110 duration-500 rounded-full border-blue-800 border-4"
+              className=" mx-auto max-w-2xl hover:scale-110 duration-500 rounded-full border-blue-800 border-4 w-48 h-48"
             />
           </motion.div>
         </div>

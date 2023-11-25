@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d55e247.css",
-    "main.js": "/static/js/main.c65cb225.js",
+    "main.css": "/static/css/main.d1797302.css",
+    "main.js": "/static/js/main.a7be1c96.js",
     "static/media/CV.pdf": "/static/media/CV.b1602388205783bf6c15.pdf",
+    "static/media/profile.png": "/static/media/profile.e477b184471471c27ce3.png",
     "static/media/allovoisin.png": "/static/media/allovoisin.e99a4de7165eff65cc7c.png",
     "static/media/portfolio.png": "/static/media/portfolio.9071cc3e09b7410e17b0.png",
     "static/media/magasinVirtuel.png": "/static/media/magasinVirtuel.f89b99fa8dfd5b5b153e.png",
@@ -14,7 +15,6 @@
     "static/media/killBique.jpg": "/static/media/killBique.d5f28f971ff7d422d512.jpg",
     "static/media/ubuntu.png": "/static/media/ubuntu.c3ae421f49700d77875c.png",
     "static/media/androidstudio.png": "/static/media/androidstudio.7bc9d933b2ef63ba0690.png",
-    "static/media/profile.png": "/static/media/profile.88754a28ded363b1b263.png",
     "static/media/vscode.png": "/static/media/vscode.b7439a02ed85dd0ad9ee.png",
     "static/media/iut.png": "/static/media/iut.dd7338728189b8a3ce3f.png",
     "static/media/docker.png": "/static/media/docker.6d1afdb456643d603142.png",
@@ -34,11 +34,11 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/sass.png": "/static/media/sass.5e9edffeb2e392a63e04.png",
     "index.html": "/index.html",
-    "main.8d55e247.css.map": "/static/css/main.8d55e247.css.map",
-    "main.c65cb225.js.map": "/static/js/main.c65cb225.js.map"
+    "main.d1797302.css.map": "/static/css/main.d1797302.css.map",
+    "main.a7be1c96.js.map": "/static/js/main.a7be1c96.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d55e247.css",
-    "static/js/main.c65cb225.js"
+    "static/css/main.d1797302.css",
+    "static/js/main.a7be1c96.js"
   ]
 }
