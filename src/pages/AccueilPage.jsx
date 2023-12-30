@@ -56,8 +56,16 @@ const AccueilPage = () => {
               className="text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              <span className="text-blue-400"> Étudiant </span> en Licence 3
-              <span className="text-blue-400"> MIAGE </span>
+              <span className="text-blue-400"> Étudiant </span> en Licence 3{" "}
+              <span className="text-blue-400 hover:underline">
+                <a
+                  href="https://univ-cotedazur.fr/miage"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  MIAGE
+                </a>
+              </span>{" "}
               passionné par l'informatique et la musique.
             </motion.p>
             <motion.p
@@ -65,7 +73,33 @@ const AccueilPage = () => {
               variants={item}
             >
               <span className="text-blue-400">Alternant DevOps / QA</span> chez{" "}
-              <span className="text-blue-400">LuxCarta Technology</span>.
+              <span className="text-blue-400 hover:underline">
+                <a
+                  href="https://www.luxcarta.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LuxCarta Technology
+                </a>
+              </span>
+              .
+            </motion.p>
+            <motion.p
+              className=" text-custom-white text-xl lg:text-3xl item"
+              variants={item}
+            >
+              <span className="text-blue-400">Chargé de missions qualité</span>{" "}
+              chez{" "}
+              <span className="text-blue-400 hover:underline">
+                <a
+                  href="https://juniormiageconcept.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Junior MIAGE Concept Nice
+                </a>
+              </span>
+              .
             </motion.p>
           </div>
           <motion.div className="item" variants={item}>
