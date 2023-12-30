@@ -17,7 +17,7 @@ const ExperiencesProfessionnelles = () => {
               className="flex h-24 w-full lg:w-24 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
               target="_blank"
               rel="noreferrer"
-              style={{ backgroundColor: "#1E3B66" }}
+              style={{ backgroundColor: "#1E3B66", aspectRatio: "1/1" }}
             >
               <img
                 className="h-full md:h-20 lg:w-20 rounded-lg" // Ajouté des classes pour le responsive
@@ -76,7 +76,7 @@ const ExperiencesProfessionnelles = () => {
               className="flex h-24 w-full lg:w-24 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
               target="_blank"
               rel="noreferrer"
-              style={{ backgroundColor: "#1E3B66" }}
+              style={{ backgroundColor: "#1E3B66", aspectRatio: "1/1" }}
             >
               <img
                 className="w-24 lg:h-20 lg:w-20 rounded-lg"
