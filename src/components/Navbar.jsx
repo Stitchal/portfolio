@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { AiFillGithub } from "react-icons/ai";
-import CV from "../assets/CV.pdf";
+import CV from "../assets/CV-ALEXIS-ROSSET.pdf";
 import { FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
 

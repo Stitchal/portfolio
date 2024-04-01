@@ -88,7 +88,7 @@ const AccueilPage = () => {
               className=" text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              <span className="text-blue-400">Chargé de missions qualité</span>{" "}
+              <span className="text-blue-400">Responsable qualité</span>{" "}
               chez{" "}
               <span className="text-blue-400 hover:underline">
                 <a
