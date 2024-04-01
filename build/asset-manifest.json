@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.bdcb15d1.css",
-    "main.js": "/static/js/main.90fbefe8.js",
-    "static/media/CV.pdf": "/static/media/CV.b1602388205783bf6c15.pdf",
+    "main.js": "/static/js/main.24425a03.js",
+    "static/media/CV-ALEXIS-ROSSET.pdf": "/static/media/CV-ALEXIS-ROSSET.ff97bb879752432c4efa.pdf",
     "static/media/profile.png": "/static/media/profile.d8f3dd767ff987f373ee.png",
     "static/media/allovoisin.png": "/static/media/allovoisin.e99a4de7165eff65cc7c.png",
     "static/media/portfolio.png": "/static/media/portfolio.9071cc3e09b7410e17b0.png",
@@ -35,10 +35,10 @@
     "static/media/sass.png": "/static/media/sass.5e9edffeb2e392a63e04.png",
     "index.html": "/index.html",
     "main.bdcb15d1.css.map": "/static/css/main.bdcb15d1.css.map",
-    "main.90fbefe8.js.map": "/static/js/main.90fbefe8.js.map"
+    "main.24425a03.js.map": "/static/js/main.24425a03.js.map"
   },
   "entrypoints": [
     "static/css/main.bdcb15d1.css",
-    "static/js/main.90fbefe8.js"
+    "static/js/main.24425a03.js"
   ]
 }
