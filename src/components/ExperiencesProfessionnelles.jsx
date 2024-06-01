@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./Container";
 import inriaImage from "../assets/inria.png";
 import luxCartaImage from "../assets/luxcarta.jpg";
+import jmcNice from "../assets/jmc-nice.png";
 import { FiExternalLink } from "react-icons/fi";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Tooltip } from "@mui/material";
@@ -10,6 +11,57 @@ const ExperiencesProfessionnelles = () => {
   return (
     <Container title="Expériences professionnelles" titleLevel="3">
       <div className="flex flex-col gap-8">
+      <div className="w-full flex gap-4 flex-col lg:flex-row ">
+          <Tooltip title="https://juniormiageconcept.com" placement="top">
+            <a
+              href="https://juniormiageconcept.com/"
+              className="flex h-24 w-full lg:w-24 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
+              target="_blank"
+              rel="noreferrer"
+              style={{ backgroundColor: "#1E3B66", aspectRatio: "1/1" }}
+            >
+              <img
+                className="h-full md:h-20 lg:w-20 rounded-lg" // Ajouté des classes pour le responsive
+                src={jmcNice}
+                alt="JMCNice"
+              />
+            </a>
+          </Tooltip>
+
+          <div className="w-full flex flex-col gap-2 items-column">
+            <div className="flex flex-col">
+              <p className="font-bold text-sm text-blue-400">
+                Février 2024 - aujourd'hui
+              </p>
+              <p className="font-bold text-xl">
+                Responsable Qualité (Associatif)
+              </p>
+            </div>
+            <div className="flex gap-1 items-center ">
+              <Tooltip title="Ouvrir dans Google Maps" placement="top">
+                <LocationOnIcon fontSize="small" />
+                <a
+                  href="https://maps.app.goo.gl/qjhjt7X4wcNahvA7A"
+                  target="_blank"
+                  className=" inline hover:underline"
+                  rel="noreferrer"
+                >
+                  Junior MIAGE Concept Nice
+                  <FiExternalLink size={15} className="ml-1 inline" />
+                </a>
+              </Tooltip>
+            </div>
+            <div className="flex flex-col gap-0.5 items-column">
+              <ul>
+                <li>- Surveillance des éditions et des actions de la structure au regard du cadre légal et de la déontologie.</li>
+                <li>- Assurrance du suivi qualité avec les clients et les intervenants.</li>
+                <li>- Mise à jour des documents types selon les changement légaux.</li>
+                <li>- Développemement du Système du Management par la Qualité (SMQ).</li>
+                <li>- Réflexion quotidienne d'amélioration continue.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div className="w-full flex gap-4 flex-col lg:flex-row ">
           <Tooltip title="https://www.luxcarta.com" placement="top">
             <a
