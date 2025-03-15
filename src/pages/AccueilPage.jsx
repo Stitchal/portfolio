@@ -53,20 +53,21 @@ const AccueilPage = () => {
               <span className="text-blue-500">Alexis Rosset</span>,
             </motion.h1>
             <motion.p
-              className="text-custom-white text-xl lg:text-3xl item"
+              className=" text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              <span className="text-blue-400"> Étudiant </span> en Licence 3{" "}
+              <span className="text-blue-400">Président</span>{" "}
+              de{" "}
               <span className="text-blue-400 hover:underline">
                 <a
-                  href="https://univ-cotedazur.fr/miage"
+                  href="https://juniormiageconcept.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  MIAGE
+                  Junior MIAGE Concept Nice
                 </a>
-              </span>{" "}
-              passionné par l'informatique et la musique.
+              </span>
+              .
             </motion.p>
             <motion.p
               className=" text-custom-white text-xl lg:text-3xl item"
@@ -85,21 +86,20 @@ const AccueilPage = () => {
               .
             </motion.p>
             <motion.p
-              className=" text-custom-white text-xl lg:text-3xl item"
+              className="text-custom-white text-xl lg:text-3xl item"
               variants={item}
             >
-              <span className="text-blue-400">Responsable qualité</span>{" "}
-              chez{" "}
+              <span className="text-blue-400"> Étudiant </span> en Master 1{" "}
               <span className="text-blue-400 hover:underline">
                 <a
-                  href="https://juniormiageconcept.com/"
+                  href="https://univ-cotedazur.fr/miage"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Junior MIAGE Concept Nice
+                  MIAGE
                 </a>
-              </span>
-              .
+              </span>{" "}
+              passionné par l'informatique et la musique.
             </motion.p>
           </div>
           <motion.div className="item" variants={item}>
