@@ -3,9 +3,7 @@ import Container from "./Container";
 import inriaImage from "../assets/inria.png";
 import luxCartaImage from "../assets/luxcarta.jpg";
 import jmcNice from "../assets/jmc-nice.png";
-import { FiExternalLink } from "react-icons/fi";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { Tooltip } from "@mui/material";
+import jeMed from "../assets/je-med.png";
 import ExperienceItem from "./ExperienceItem";
 
 const ExperiencesProfessionnelles = () => {
@@ -13,8 +11,28 @@ const ExperiencesProfessionnelles = () => {
     <Container title="Expériences professionnelles" titleLevel="3">
       <div className="flex flex-col gap-8">
         <ExperienceItem
+          title="Président (Associatif)"
+          period="Mars 2025 - maintenant"
+          company="Junior MIAGE Concept Nice"
+          locationUrl="https://maps.app.goo.gl/qjhjt7X4wcNahvA7A"
+          companyUrl="https://juniormiageconcept.com/"
+          imageUrl={jmcNice}
+          tasks={[
+            "Élaboration et mise en œuvre de la stratégie globale.",
+            "Représentation légale et institutionnelle de l'entreprise auprès des partenaires et des institutions.",
+            "Animation des réunions et assemblées générales.",
+            "Coordination des diérents pôles et alignement des projets et actions.",
+          ]}
+        />
+        <ExperienceItem
+          title="Chargé de communication (Associatif)"
+          period="Juin 2024 - Mars 2025"
+          company="Junior-Entreprises Méditerranée"
+          imageUrl={jeMed}
+        />
+        <ExperienceItem
           title="Responsable Qualité (Associatif)"
-          period="Février 2024 - aujourd'hui"
+          period="Février 2024 - Février 2025"
           company="Junior MIAGE Concept Nice"
           locationUrl="https://maps.app.goo.gl/qjhjt7X4wcNahvA7A"
           companyUrl="https://juniormiageconcept.com/"
