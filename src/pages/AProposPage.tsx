@@ -1,13 +1,13 @@
-import React from "react";
-import Title from "../components/Title";
-import Competences from "../components/Competences";
-import Etudes from "../components/Etudes";
-import ExperiencesProfessionnelles from "../components/ExperiencesProfessionnelles";
-import AutresCompetences from "../components/AutresCompetences";
+import Title from '../components/Title';
+import Competences from '../components/Competences';
+import Etudes from '../components/Etudes';
+import ExperiencesProfessionnelles from '../components/ExperiencesProfessionnelles';
+import AutresCompetences from '../components/AutresCompetences';
+import { Element } from 'react-scroll';
 
-const AProposPage = () => {
+const AProposPage = (): JSX.Element => {
   return (
-    <div
+    <Element
       name="À propos"
       className="flex items-center min-h-screen w-full flex-col bg-gradient-to-r from-background-color to-container-bg px-5 pt-20"
     >
@@ -20,7 +20,7 @@ const AProposPage = () => {
           <ExperiencesProfessionnelles />
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

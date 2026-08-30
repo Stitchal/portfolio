@@ -1,8 +1,9 @@
+import { FiExternalLink } from 'react-icons/fi';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Tooltip } from '@mui/material';
+import { Experience } from '../types';
 
-import React from "react";
-import { FiExternalLink } from "react-icons/fi";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { Tooltip } from "@mui/material";
+type ExperienceItemProps = Omit<Experience, 'id'>;
 
 const ExperienceItem = ({
   title,
@@ -14,22 +15,18 @@ const ExperienceItem = ({
   tasks,
   technologies,
   url,
-}) => {
+}: ExperienceItemProps): JSX.Element => {
   return (
-    <div className="w-full flex gap-4 flex-col lg:flex-row ">
-      <Tooltip title={companyUrl} placement="top">
+    <div className="w-full flex gap-4 flex-col lg:flex-row">
+      <Tooltip title={companyUrl ?? ''} placement="top">
         <a
           href={companyUrl}
           className="flex h-24 w-full lg:w-24 rounded-xl shadow-md p-2 hover:scale-105 duration-200 items-center justify-center"
           target="_blank"
           rel="noreferrer"
-          style={{ backgroundColor: "#1E3B66", aspectRatio: "1/1" }}
+          style={{ backgroundColor: '#1E3B66', aspectRatio: '1/1' }}
         >
-          <img
-            className="h-full md:h-20 lg:w-20 rounded-lg"
-            src={imageUrl}
-            alt={company}
-          />
+          <img className="h-full md:h-20 lg:w-20 rounded-lg" src={imageUrl} alt={company} />
         </a>
       </Tooltip>
       <div className="w-full flex flex-col gap-2 items-column">
@@ -37,19 +34,23 @@ const ExperienceItem = ({
           <p className="font-bold text-sm text-blue-400">{period}</p>
           <p className="font-bold text-xl">{title}</p>
         </div>
-        <div className="flex gap-1 items-center ">
-          <Tooltip title="Ouvrir dans Google Maps" placement="top">
-            <LocationOnIcon fontSize="small" />
-            <a
-              href={locationUrl}
-              target="_blank"
-              className=" inline hover:underline"
-              rel="noreferrer"
-            >
-              {company}
-              <FiExternalLink size={15} className="ml-1 inline" />
-            </a>
-          </Tooltip>
+        <div className="flex gap-1 items-center">
+          <LocationOnIcon fontSize="small" />
+          {locationUrl ? (
+            <Tooltip title="Ouvrir dans Google Maps" placement="top">
+              <a
+                href={locationUrl}
+                target="_blank"
+                className="inline hover:underline"
+                rel="noreferrer"
+              >
+                {company}
+                <FiExternalLink size={15} className="ml-1 inline" />
+              </a>
+            </Tooltip>
+          ) : (
+            <span>{company}</span>
+          )}
         </div>
         <div className="flex flex-col gap-0.5 items-column">
           {tasks && (

@@ -1,21 +1,16 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { AiFillGithub } from "react-icons/ai";
-import CV from "../assets/CV-ALEXIS-ROSSET.pdf";
-import { FiExternalLink } from "react-icons/fi";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
+import { IoLogoLinkedin } from 'react-icons/io5';
+import { AiFillGithub } from 'react-icons/ai';
+import CV from '../assets/CV-ALEXIS-ROSSET.pdf';
+import { FiExternalLink } from 'react-icons/fi';
+import { motion } from 'framer-motion';
+import { navLinks } from '../data/navLinks';
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
   const [nav, setNav] = useState(false);
 
-  const links = [
-    { id: 1, link: "Accueil" },
-    { id: 2, link: "Projets" },
-    { id: 3, link: "À propos" },
-    { id: 4, link: "Contact" },
-  ];
   return (
     <div className="flex items-center h-20 px-4 text-custom-white bg-gradient-to-r w-full fixed z-10 gray from-background-color to-container-bg">
       <div className="flex w-full 2xl:w-2/3 m-auto justify-between">
@@ -42,8 +37,9 @@ const Navbar = () => {
             <AiFillGithub size={30} />
           </a>
         </div>
+
         <ul className="hidden md:flex gap-1">
-          {links.map(({ id, link }) => (
+          {navLinks.map(({ id, link }) => (
             <li
               key={id}
               className="p-2 cursor-pointer font-medium text-gray-300 hover:text-blue-500 duration-200 rounded-lg"
@@ -53,10 +49,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <li
-            key={5}
-            className="p-2 cursor-pointer font-medium text-gray-300 hover:text-blue-500 duration-200 rounded-lg"
-          >
+          <li className="p-2 cursor-pointer font-medium text-gray-300 hover:text-blue-500 duration-200 rounded-lg">
             <a
               href={CV}
               target="_blank"
@@ -88,25 +81,17 @@ const Navbar = () => {
 
         {nav && (
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-rgb(0, 9, 24) to-rgb(0, 17, 43) text-custom-white bg-container-bg">
-            {links.map(({ id, link }) => (
+            {navLinks.map(({ id, link }) => (
               <li key={id} className="px-4 cursor-pointer py-6 text-2xl">
-                <Link
-                  onClick={() => setNav(!nav)}
-                  to={link}
-                  smooth
-                  duration={500}
-                >
+                <Link onClick={() => setNav(false)} to={link} smooth duration={500}>
                   {link}
                 </Link>
               </li>
             ))}
-            <li
-              key={5}
-              className="px-4 cursor-pointer capitalize py-6 text-2xl"
-            >
+            <li className="px-4 cursor-pointer capitalize py-6 text-2xl">
               <a
                 href={CV}
-                onClick={() => setNav(!nav)}
+                onClick={() => setNav(false)}
                 target="_blank"
                 rel="noreferrer"
                 className="flex flex-row items-center gap-2"

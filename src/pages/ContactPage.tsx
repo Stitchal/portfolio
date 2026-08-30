@@ -1,25 +1,21 @@
-import React, { useState, useRef } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
-import Title from "../components/Title";
+import { useState, useRef } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+import Title from '../components/Title';
+import { Element } from 'react-scroll';
 
-const Contact = () => {
-  const [captchaValue, setCaptchaValue] = useState(null);
-  const formRef = useRef(null);
+const ContactPage = (): JSX.Element => {
+  const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
-  function onChange(value) {
-    // console.log("Captcha value:", value);
-    setCaptchaValue(value);
-  }
-
-  function handleSubmit(event) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>): void {
     event.preventDefault();
-    // Envoyer le formulaire
-    captchaValue && formRef.current.submit();
-    // console.log("Formulaire envoyé");
+    if (captchaValue && formRef.current) {
+      formRef.current.submit();
+    }
   }
 
   return (
-    <div
+    <Element
       name="Contact"
       className="flex items-center min-h-screen w-full flex-col bg-gradient-to-r from-background-color to-container-bg px-5 pt-20"
     >
@@ -49,24 +45,23 @@ const Contact = () => {
           <textarea
             name="message"
             placeholder="Votre message"
-            rows="10"
+            rows={10}
             className="p-4 bg-gradient-to-tr from-container-bg to-blue-gray text-custom-white rounded-lg focus:outline-none resize-none shadow-md shadow-gray-900"
             required
-          ></textarea>
+          />
           <div className="flex flex-col items-end gap-4 w-full justify-end">
             <ReCAPTCHA
               sitekey="6Lf9ggQoAAAAAIGpzYtTnhp-oDoOCtBPXwfT1kr8"
-              onChange={onChange}
+              onChange={(value) => setCaptchaValue(value)}
             />
-
             <button className="flex text-custom-white bg-blue-500 cursor-pointer w-fit md:py-4 p-4 md:px-10 lg:mt-0 duration-500 rounded-xl hover:scale-110 font-bold">
               Envoyer
             </button>
           </div>
         </form>
       </div>
-    </div>
+    </Element>
   );
 };
 
-export default Contact;
+export default ContactPage;
